@@ -4,7 +4,8 @@ From Zero Repository for doing devOps work
 ## Create a project scafold 
 
 ### Create development enviornment that is cloud-based:
-### Github Codespaces, Colab Notebook
+### Colab Notebook
+### Github Codespaces
 ### AWS CloudShell
 ### AWS Cloud9
 
