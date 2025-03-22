@@ -12,7 +12,13 @@ test:
 format:
 	black *.py devopslib/*.py
 
-deploy:
-	echo "deploy goes here"
+post-install:
+	python -m textblob.download_corpora
 
-all: install lint test format deploy
+deploy:
+	aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 258266855446.dkr.ecr.ap-south-1.amazonaws.com
+	docker build -t devops-noah-gift .
+	docker tag devops-noah-gift:latest 258266855446.dkr.ecr.ap-south-1.amazonaws.com/devops-noah-gift:latest
+	docker push 258266855446.dkr.ecr.ap-south-1.amazonaws.com/devops-noah-gift:latest
+
+all: install post-install lint test format deploy
