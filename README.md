@@ -14,10 +14,10 @@ From Zero Repository for doing devOps work
 
 Build Out python project scaffold:
 
-* Makefile
-* requirements.txt
-* test_library.py
-* python_library
+* [Makefile](https://github.com/DHARAJAK/python-for-devops-noah-youtube/blob/main/Makefile)
+* [requirements.txt](https://github.com/DHARAJAK/python-for-devops-noah-youtube/blob/main/requirements.txt)
+* [test_library.py](https://github.com/DHARAJAK/python-for-devops-noah-youtube/blob/main/test_devopslib.py)
+* [python_library](https://github.com/DHARAJAK/python-for-devops-noah-youtube/tree/main/devopslib)
 * Dockerfile
 * command-line-tool
 * Microservice
